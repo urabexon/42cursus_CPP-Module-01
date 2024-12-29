@@ -6,12 +6,12 @@
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/29 19:43:03 by hurabe            #+#    #+#             */
-/*   Updated: 2024/12/29 20:44:13 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/12/29 21:54:52 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
 Zombie* newZombie(std::string name) {
-	
+	return new Zombie(name);
 }
