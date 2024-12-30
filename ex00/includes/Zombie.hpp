@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/29 19:41:13 by hurabe            #+#    #+#             */
-/*   Updated: 2024/12/29 20:28:56 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/12/30 19:19:22 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Zombie {
 		void	announce(void);
 
 	private:
-		std::string _name;
+		std::string _name; //privateメンバ変数は_(アンダースコア)をつける
 };
 
 Zombie*	newZombie(std::string name);

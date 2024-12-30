@@ -6,12 +6,13 @@
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/29 19:43:03 by hurabe            #+#    #+#             */
-/*   Updated: 2024/12/29 21:54:52 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/12/30 21:51:40 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
+// メモリを使用してゾンビ生成し、ポインタを返す
 Zombie* newZombie(std::string name) {
 	return new Zombie(name);
 }

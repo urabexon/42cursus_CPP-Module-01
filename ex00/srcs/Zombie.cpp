@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/29 19:43:07 by hurabe            #+#    #+#             */
-/*   Updated: 2024/12/29 21:56:03 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/12/30 20:06:04 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ Zombie::~Zombie() {
 	std::cout << _name << ": is dead !!" << std::endl;
 }
 
+// メンバ関数
 void	Zombie::announce(void) {
 	std::cout << _name << ": BraiiiiiiinnnzzzZ…" << std::endl;
 }

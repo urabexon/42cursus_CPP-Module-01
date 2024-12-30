@@ -6,7 +6,7 @@
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/29 22:09:01 by hurabe            #+#    #+#             */
-/*   Updated: 2024/12/29 22:17:38 by hurabe           ###   ########.fr       */
+/*   Updated: 2024/12/30 21:39:40 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,16 @@
 
 class Zombie {
 	public:
-		Zombie();
-		Zombie(std::string name);
-		~Zombie();
+		Zombie(); // コンストラクタ
+		~Zombie(); // デストラクタ
+		void	set_name(std::string name);
 		void	announce(void);
 
 	private:
-		std::string _name;
+		std::string _name; // ゾンビの名前を格納する
 };
 
+// N体のZombieを作成し、最初のZombieへのポインタを返す
 Zombie*	zombieHorde(int N, std::string name);
 
 #endif

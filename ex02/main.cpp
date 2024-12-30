@@ -5,33 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hurabe <hurabe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/29 19:43:00 by hurabe            #+#    #+#             */
-/*   Updated: 2024/12/30 21:54:48 by hurabe           ###   ########.fr       */
+/*   Created: 2024/12/30 20:36:17 by hurabe            #+#    #+#             */
+/*   Updated: 2024/12/30 22:30:19 by hurabe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include <iostream>
 
-int main(void) {
-	// スタック
-	std::cout << "----------Stack Zone----------" << std::endl;
-	Zombie zombie1("Zombie1");
-	Zombie zombie2("Zombie2");
-	zombie1.announce();
-	zombie2.announce();
-	randomChump("randomChumpZ");
-	std::cout << std::endl;
-	
-	// ヒープ
-	std::cout << "----------Heap Zone----------" << std::endl;
-	Zombie *zombie3;
-	zombie3 = newZombie("Zombie3");
-	zombie3->announce();
-	delete zombie3;
+int	main(void) {
+	std::string s = "HI THIS IS BRAIN";
+	std::string	*stringPTR = &s;
+	std::string	&stringREF = s;
+
+	std::cout << "String variable's address: " << &s << std::endl;
+	std::cout << "stringPTR's address: " << stringPTR << std::endl;
+	std::cout << "stringREF's address: " << &stringREF << std::endl;
+	std::cout << "the string variable's value: " << s << std::endl;
+	std::cout << "stringPTR's value: " << *stringPTR << std::endl;
+	std::cout << "stringREF's value: " << stringREF << std::endl;
 	return 0;
 }
-
-/*
-　・ヒープとスタックにそれぞれゾンビを作成し、使い分けを学ぶ
-　・newとdeleteの使い方を学ぶ
-*/
